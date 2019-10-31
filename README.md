@@ -6,7 +6,7 @@ Voici comment lancer le programme :
 
     - git clone https://github.com/Maxx-N/s5_j4_gossip_project_facebook_style.git
 
-    - cd s5_j1_gossip_project_first_views
+    - cd s5_j4_gossip_project_facebook_style/
 
     - bundle install
 
