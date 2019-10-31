@@ -1,6 +1,6 @@
 <% if current_user %> 
 
-  <h1>Salut <%= current_user.first_name %> !!!</h1>
+  <h1>Salut <%= current_user.first_name.titleize %> !!!</h1>
   <br>
   <h3>Clique <%= link_to "ici", new_gossip_path %> pour créer ton potin... </h3>
   <br>

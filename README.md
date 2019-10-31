@@ -1,24 +1,29 @@
-# README
+Bonjour et bienvenus !!! :) 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Voici comment lancer le programme : 
 
-Things you may want to cover:
+  DANS LE TERMINAL, TAPER LES COMMANDES SUIVANTES : 
 
-* Ruby version
+    - git clone https://github.com/Maxx-N/s5_j1_gossip_project_first_views.git
 
-* System dependencies
+    - cd s5_j1_gossip_project_first_views
 
-* Configuration
+    - bundle install
 
-* Database creation
+    - rails db:migrate
 
-* Database initialization
+    - rails db:seed
 
-* How to run the test suite
+    - rails server
+    
+    (laisser tourner le serveur)
 
-* Services (job queues, cache servers, search engines, etc.)
+  PUIS, DANS VOTRE NAVIGATEUR, SAISIR L'URL : 
 
-* Deployment instructions
+    - http://localhost:3000/
 
-* ...
+
+Après des heures passées à essayer, je n'ai finalement toujours pas réussi à déconnecter un utilisateur : J'ai eu beau le tourner dans tous les sens, le server ne comprend pas ma requête "delete" qui vise la méthode destroy du sessions_controller... il la prend pour une requête "get" ...
+Je me suis déjà arraché beaucoup de cheveux donc si vous avez des conseils pour mon bien capillaire, je suis preneur !!! Merci d'avance :)
+
+  
