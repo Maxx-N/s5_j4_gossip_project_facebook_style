@@ -16,18 +16,33 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
-    <li class="nav-item nav-link">
-    <%= link_to "Se connecter", new_session_path %>
-  </li>
       <li class="nav-item nav-link">
         <%= link_to "L'équipe", team_path %>
       </li>
       <li class="nav-item nav-link">
         <%= link_to "Nous contacter", contact_path %>
       </li>
+      <li class="nav-item nav-link">
+        <%= link_to "Se connecter", new_session_path %>
+      </li>
+      <li class="nav-item nav-link">
+        <%= link_to "Se déconnecter", session_path(session.id) %>
+      </li>
     </ul>
+  </div>
+  <div class="dropdown show">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown link
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
   </div>
 </nav>
     <%= yield %>
   </body>
 </html>
+
+
