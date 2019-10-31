@@ -33,6 +33,9 @@
       </li>
     </ul>
   </div>
+  <div>
+    <h5 class="nav-item nav-link"> Bienvenu(e) <%= link_to "#{current_user.first_name.titleize}", user_path(current_user.id) %> ! </h5>
+  </div>
   <div class="dropdown show">
     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Dropdown link
