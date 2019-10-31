@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
     session.delete(:user_id)
     puts "$" * 100
     puts "EFFACEEER !!!"
-    redirect_to 'new'
+    redirect_to '/'
   end
 
 end

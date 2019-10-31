@@ -23,7 +23,4 @@ Voici comment lancer le programme :
     - http://localhost:3000/
 
 
-Après des heures passées à essayer, je n'ai finalement toujours pas réussi à déconnecter un utilisateur : J'ai eu beau le tourner dans tous les sens, le server ne comprend pas ma requête "delete" qui vise la méthode destroy du sessions_controller... il la prend pour une requête "get" ...
-Je me suis déjà arraché beaucoup de cheveux donc si vous avez des conseils pour mon bien capillaire, je suis preneur !!! Merci d'avance :)
-
   
