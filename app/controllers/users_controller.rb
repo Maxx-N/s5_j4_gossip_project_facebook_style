@@ -25,7 +25,7 @@ class UsersController < ApplicationController
       if u.save
         puts "$" * 100
         puts "UTILISATEUR AJOUTÉ"
-        render 'sessions'
+        redirect_to '/'
       else
         puts "$" * 100
         puts "ÇA MARCHE PAS"
