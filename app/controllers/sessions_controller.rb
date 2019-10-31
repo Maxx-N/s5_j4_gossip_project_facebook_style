@@ -19,8 +19,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete(:user_id)
-    puts "$" * 100
-    puts "EFFACEEER !!!"
     redirect_to '/'
   end
 

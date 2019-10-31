@@ -13,7 +13,7 @@ class UsersController < ApplicationController
       u.age = params[:new_age]
       u.description = params[:new_description]
       if City.all.find_by(name: params[:new_city])
-        u.city_id = params[:new_city].id
+        u.city = City.all.find_by(name: params[:new_city])
       else
         c = City.new
         c.name = params[:new_city]
