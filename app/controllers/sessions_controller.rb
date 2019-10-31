@@ -11,9 +11,6 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       # redirige où tu veux, avec un flash ou pas
       redirect_to '/'
-      # vérifier que la session est bien ouverte
-      puts "$" * 100
-      puts current_user.first_name
     else
       flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
@@ -22,6 +19,8 @@ class SessionsController < ApplicationController
 
   def destroy
     session.delete(:user_id)
+    puts "$" * 100
+    puts "EFFACEEER !!!"
     redirect_to 'new'
   end
 

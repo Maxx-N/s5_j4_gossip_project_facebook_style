@@ -11,7 +11,7 @@ class GossipsController < ApplicationController
 
   def create
     new_gossip = Gossip.new
-    new_gossip.id = Gossip.all.length + 1
+    new_gossip.id = Gossip.all.last.id + 1
     new_gossip.title = params[:gossip_title]
     new_gossip.content = params[:gossip_content]
     new_gossip.user = current_user
